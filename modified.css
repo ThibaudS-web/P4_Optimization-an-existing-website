@@ -1,0 +1,309 @@
+a:focus, button:focus{
+    border: 2px solid blue;
+}
+
+p{
+    font-size: 1em;
+}
+
+#description{
+    font-size: 1.6em;
+    margin-bottom: 5rem;
+}
+
+#citation{
+    font-size: 1.4em;
+    font-style: italic;
+    width: 80%;
+    margin: auto;
+}
+
+#citation span{
+    font-size: .7em;
+    font-style: normal;
+}
+
+#titre_realisation{
+    font-size: 1.6em;
+}
+
+#contact{
+    font-size: .8em;
+    line-height: 2em;
+}
+
+#title_cta{
+    font-size: 1.8em;
+}
+
+.tc-bloc3{
+    color: #000 !important;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: #000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.title-footer{
+    color: #000;
+    font-weight: bold;
+}
+
+/*Nav*/
+
+.navbar-header{
+    width: 100%;
+
+}
+
+.icon_nav{
+    display: none;        
+}
+
+@media only screen and (max-width: 480px) { 
+
+    .site-navigation{
+        position: absolute;
+        right: 0%;
+        top: -12px;
+    }
+    .fas, .far{
+        font-size: .8em;
+    }
+
+    .icon_nav{
+        display: inline-block;
+        font-size: 2em;
+    }
+    
+    .text_nav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px){
+
+    .site-navigation{
+       
+        right: 0px;
+    
+    }
+}
+
+    
+
+/*Formulaire*/
+#formulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact{
+    font-size: 1em;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label{
+    font-weight: bold;
+    position: relative;
+}
+
+input, textarea{
+    margin-bottom: 20px;
+    margin-top: 10px;  
+    font-size: 1em;
+    background-color: white;
+    border: 2px solid #9C6C4D;
+}
+
+#message, label{
+    width: 500px;
+    margin-top: 10px;
+}
+
+#input_504  {
+    width: 400px;
+}
+
+#email{
+    width: 300px;
+}
+
+#name{
+    width: 200px;
+}
+
+.fa-asterisk{
+    color: rgb(196, 58, 58);
+    font-size: .7em;
+    position: absolute;
+    margin-left: 5px;
+}
+
+input:focus:invalid, textarea:focus:invalid{
+    border: 2px solid #d45252;
+    background-image: none;
+    box-shadow: #d45252 0 0 5px;
+    background-color: #d45252;
+}
+
+input:valid, textarea:valid{
+    background-image: none;
+    border: 2px solid #6dd159;
+    box-shadow: #6dd159 0 0 5px;
+    background-color: #6dd159;
+}
+
+.form-group span{
+    display: none;
+    margin-bottom: 20px;
+}
+
+input:focus:invalid + span{
+    display: inline;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+textarea:focus:invalid + span {
+    display: inline;
+    color: #ff0000;
+    font-weight: bold;
+}
+@media only screen and (max-width: 480px) { 
+
+    #form_1{
+        width: 100%;
+        margin: auto;
+    }
+
+    #name, #email, #input_504, #message{
+        align-self: center;
+        width: 80%;
+    }
+
+    label{
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .btn{
+        margin-left: 10%;
+    }
+}
+/*Port-folio*/
+figure{
+    display: flex;
+    flex-direction: column;
+}
+
+#pos-1{
+    transform-origin: top left;
+}
+
+#pos-2{
+    transform-origin: top right;
+}
+
+#pos-3{ 
+    transform-origin: bottom left;
+}
+
+#pos-4{
+    transform-origin: bottom right;
+}
+
+figure img{ 
+    width: 270px;
+    height: 270px;
+    transform: scale(1);
+    box-shadow: gray 0 0 8px;
+    cursor: pointer;
+}
+
+figure img:active{
+    transition: all 350ms ease-in;
+    transform: scale(1.50);
+    z-index: 1;
+}
+
+figcaption{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/*MediaQ*/
+@media only screen and (max-width: 480px) {
+
+    #bloc-4-portfolio img{
+        width: 100%;
+    }
+
+    .portfolio-row {
+       margin-bottom: 0;
+        margin-top: 25px;
+    }
+    .col-sm-6{
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure{
+        width: 80%;
+    }
+
+    figure img:hover{
+       transform: none;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    figure{
+        width: 90%;
+    }
+
+ 
+}
+
+/*FOOTER*/
+.row{
+    margin:auto ;
+}
+
+footer li{
+    margin-top: 10px;
+}
+
+footer .row{
+    width: 90%;
+}
+
+.fab{
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.title-footer{
+    width: auto;
+}
+
