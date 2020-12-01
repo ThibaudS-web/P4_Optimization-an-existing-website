@@ -20,7 +20,9 @@ p{
     font-size: 1.4em;
     font-style: italic;
     width: 80%;
-    margin: auto;
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 40px;
 }
 
 #citation span{
